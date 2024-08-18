@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .table__Container{
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(6,200px);
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        table th, td{
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0.5rem;
+        }
+
+        td, th{
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+
+        .odd{
+            background-color: #f2f2f2;
+        }
+
+        .even{
+            background-color: #ffffff;
+        }
+
+        
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="table__Container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Table-Header 1</th>
+                    <th>Table-Header 2</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr class="row">
+                    <td class="odd">Cell 1</td>
+                    <td class="even">Cell 2</td>
+                </tr>
+    
+                <tr class="row">
+                    <td class="odd">Cell 3</td>
+                    <td class="even">Cell 4</td> 
+                </tr>
+    
+                <tr class="row">
+                    <td class="odd">Cell 5</td>
+                    <td class="even">Cell 6</td>
+                </tr>
+    
+                <tr class="row">
+                    <td class="odd">Cell 7</td>
+                    <td class="even">Cell 8</td> 
+                </tr>
+    
+                <tr class="row">
+                    <td class="odd">Cell 9</td>
+                    <td class="even">Cell 10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
-
 </html>
